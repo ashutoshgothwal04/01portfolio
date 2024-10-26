@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    bottom: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", serif;
+}
+
+/* bg - #1f242d
+2ND - #323946
+txt - white
+main - #0ef
+ */
+
+ html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background: #1f242d;
+    font-family: 'Poopins', sans-serif;
+    color: white;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3rem 9%;
+    background: #1f242d;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100000;
+}
+
+header.sticky{
+    border-bottom: .1rem solid rgba(0,0,1,.2);
+}
+
+.logo{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s ease;
+    font-family: 'Poopins', sans-serif;
+}
+
+.navbar a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    font-family: 'Poopins', sans-serif;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: #0ef;
+    border-bottom: 3px solid #0ef;
+}
+
+#menu-icon{
+    font-size: 3.6rem;
+    color: #fff;
+    display: none;
+ }
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9rem 2rem ;
+    font-family: 'Poopins', sans-serif;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poopins', sans-serif;
+}
+
+.home-img img{
+    width: 35vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2.4rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.home-contact h3{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-family: 'Poopins', sans-serif;
+}
+
+
+.home-contact h3:nth-last-of-type(2){
+    margin-bottom: 2rem ;
+    font-family: 'Poopins', sans-serif;
+}
+
+span{
+    color: #0ef;
+    font-family: 'Poopins', sans-serif;
+}
+
+
+
+.home-contact  h1{
+    font-size: 5.6rem;
+    font-weight: 600;
+    line-height: 1.3;
+    font-family: 'Poopins', sans-serif;
+}
+
+.home-img img{
+    position: relative;
+    height: 55vh;
+    width: 55vh;
+    left: 7px;
+    bottom: 30px;
+    border-radius: 50%;
+    margin: 20px 0px 0px 25px;
+    box-shadow:  0 0 25px silver;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.home-img img:hover{
+    transform: scale(1.01);
+    filter: drop-shadow(0 0 20px silver);
+}
+
+
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: 0.2rem solid silver;
+    font-size: 2rem;
+    border-radius: 50%;
+    color: #0ef;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+}
+
+.social-media a:hover{
+    color: black;
+    transform: scale(1.3);
+    background: #0ef;
+    box-shadow: 0 0 25px silver;
+}
+
+.home-contact p {
+    text-align: start;
+    font-size: 2rem;
+    font-family: 'Poopins', sans-serif;
+    font-weight: 500;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: white;
+    border: 2px solid #0ef;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+    font-family: 'Poopins', sans-serif;
+}
+
+
+.btn:hover{
+    transform: scale(1.03);
+    background-color: silver;
+    color: #000;
+    box-shadow: 0 0 25px silver;
+    font-family: 'Poopins', sans-serif;
+}
+
+
+
+/* about section  */
+
+
+
+
+.About{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem ;
+    background: #323946;
+    font-family: 'Poopins', sans-serif;
+}
+
+
+.About img{
+    position: relative;
+    height: 55vh;
+    width: 55vh;
+    right: -5vh;
+    border-radius: 50%;
+    border-radius: 50%;
+    bottom: 3vh;
+    margin: 20px 0px 0px 25px;
+    box-shadow:  0 0 25px silver;
+}
+
+.heading{
+    text-align: center;
+    font-size: 6rem;
+    font-family: 'Poopins', sans-serif;
+}
+
+
+.about-contant h2{
+    text-align: left;
+    line-height: 1.2;
+    position: relative;
+    bottom: -8vh;
+    right: -10vh;
+}
+
+.about-contant h3{
+    font-size: 3.5rem;
+    font-family: 'Poopins', sans-serif;
+    position: relative;
+    bottom: -60px;
+    right: -10vh;
+
+}
+
+.about-contant p{
+    font-size: 1.6rem;
+    /* margin: 2rem 0 2.3rem; */
+    font-family: 'Poopins', sans-serif;
+    margin: 50px 64px 91px 73px;
+    position: relative;
+    top: 10vh;
+    font-weight: 700;
+}
+
+.about-contant a{
+    position: relative;
+    margin: 10vh 5vh 0 5vh;
+    bottom: 7vh;
+    left: 37px;
+}
+
+/* services section */
+
+
+.services h2{
+    margin-bottom: 5rem;
+}
+
+.services-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: wrap;
+    gap: 2rem;
+
+}
+
+
+.services-container .services-box{
+    flex: 1 1 30rem;
+    background: #323946;
+    padding: 3rem 2rem 4rem;
+    text-align: center;
+    border: .2rem solid #1f242d;
+    font-family: 'Poopins', sans-serif;
+    border-radius: 50px;
+
+}
+
+.services-container .services-box:hover{
+    border-color: #0ef;
+    transition: 0.5s ease;
+    transform: scale(1.03);
+}
+
+.services-box i{
+    font-size: 7rem;
+    color: #0ef;
+}
+
+.services-box h3{
+    font-size: 2.6rem;
+    font-family: 'Poopins', sans-serif;
+}
+
+.services-box p{
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+    font-family: 'Poopins', sans-serif;
+}
+
+
+/* contact area */
+
+
+.contact h2{
+    margin-bottom: 3rem;
+}
+
+
+.contact form{
+    min-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #323946;
+    border-radius: .8rem;
+    border: none;
+    margin: .7rem 0;
+}
+
+.contact form .input-box input{
+    width: 49%;
+}
+
+.contact form textarea{
+    resize: none;
+}
+
+
+.contact form .btn{
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+
+/* footer */
+
+
+.footer-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 18px;
+    background: #323946;
+}
+
+.footer-text p{
+    font-size: 1.6rem;
+}
+
+.footer-iconTop a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem ;
+    background: #0ef;
+    border-radius: .8rem;
+    transition: .5s ease;
+    justify-items: right;
+}
+
+
+.footer-iconTop a:hover{
+    box-shadow: 0 0 1rem #0ef;
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: #323946;
+}
+
+
+/* breakepoint */
+
+@media (max-width:1200px){
+    html {
+        font-size:55%;
+    }
+
+ @media (max-width:991px) {
+    header{
+       padding: 2rem 3%;
+    }
+    section{
+        padding: 10rem 2rem 3%;
+     }
+    .footer{
+        padding: 2rem 3%;
+    }
+ }
+}
+
+@media (max-width:768px){
+    #menu-icon{
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: #1f242d;
+        border-top: 1px solid rgba(0,0,1,.2);
+        box-shadow: 0 .5rem 1rem rgba(0,00,0,rgba(0,0,1,.2));
+        display: none;
+    }
+    .navbar.active{
+        display: block;
+    }
+
+
+    .navbar a {
+        display: block;
+        font-size: 2rem ;
+        margin: 3rem 0 ;
+    }
+
+    .home{
+        flex-direction: column;
+    }
+    
+    .home-contact h3{
+        font-size: 2.6rem;
+    }
+    
+    .home-contact h1{
+        font-size: 5rem;
+    }
+    
+    .home-img img{
+        width: 240px;
+        height: 210px;
+        margin-top: 4rem;
+    }
+    
+    .About{
+        flex-direction: column-reverse;
+    }
+    
+    
+    .About img{
+        width: 70vw;
+        height: fit-content;
+        margin: 10vw;
+    }
+
+    .about-contant {
+        position: relative;
+        top: 10rem;
+        right: 40px;
+    }
+    
+}
+
+
+
+/* font-family: 'Poopins', sans-serif; */
